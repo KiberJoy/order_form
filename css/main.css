@@ -1,0 +1,232 @@
+* {
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+.wrapper {
+    margin: 0 auto;
+    width: 1280px;
+}
+.form_view {
+    display: flex;
+    flex-direction: column;
+}
+.form_text_black {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 12px;
+    line-height: 130%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #212121;
+    margin-bottom: 10px;
+}
+.form_text_green {
+    color: #428A60;
+}
+.input_reg {
+    padding: 16px 96px 16px 20px;
+    width: 320px;
+    background-color: #F8F8F8;
+    border: 1px solid #E4E4E4;
+    box-sizing: border-box;
+    border-radius: 5px;
+    outline: none;
+}
+.input_reg::-webkit-input-placeholder {
+    color: #212121;
+    opacity: 0.2;
+}
+.input_reg::-moz-placeholder {
+    color: #212121;
+    opacity: 0.2;
+}
+.input_reg:-ms-input-placeholder {
+    color: #212121;
+    opacity: 0.2;
+}
+.input_reg::-ms-input-placeholder {
+    color: #212121;
+    opacity: 0.2;
+}
+.input_reg::placeholder {
+    color: #212121;
+    opacity: 0.2;
+}
+main {
+    background-color: #E5E5E5;
+    width: 100%;
+}
+main > .wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 75px 0;
+}
+main > .wrapper > .left_block {
+    background: linear-gradient(180deg, #428A60 0%, #35734F 100%);
+    box-shadow: 0px 24px 80px rgba(0, 0, 0, 0.1);
+    border-radius: 1px;
+    width: 560px;
+    background-image: url(../img/left.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+main > .wrapper > .left_block > .small_pic {
+    display: none;
+}
+main > .wrapper > .right_block {
+    background: #FFFFFF;
+    box-shadow: 0px 24px 80px rgba(0, 0, 0, 0.1);
+    border-radius: 1px;
+    width: 560px;
+}
+main > .wrapper > .right_block > div:first-of-type {
+    padding: 29px 0;
+    background: #F8F8F8;
+    border-top-right-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main > .wrapper > .right_block > div:first-of-type > h2 {
+    width: 303px;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 130%;
+    text-align: center;
+    color: #212121;
+}
+main > .wrapper > .right_block > .registr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 52px 0 60px 0;
+}
+main > .wrapper > .right_block > .registr > form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main > .wrapper > .right_block > .registr > form > .form_view:last-of-type {
+    margin: 20px 0 38px 0;
+    display: grid;
+    grid-template-columns: 160px 160px;
+    grid-template-areas: "label label"
+                        "input div";
+
+}
+main > .wrapper > .right_block > .registr > form > .form_view:last-of-type > label {
+    grid-area: label;
+}
+main > .wrapper > .right_block > .registr > form > .form_view:last-of-type > input {
+    width: 184px;
+    grid-area: input;
+    padding: 16px 20px;
+}
+main > .wrapper > .right_block > .registr > form > .form_view:last-of-type > div {
+    display: flex !important;
+    grid-area: div !important;
+    justify-content: flex-end !important;
+    position: relative !important;
+}
+main > .wrapper > .right_block > .registr > form > button {
+    outline: none;
+    background-color: #428A60;
+    border-radius: 5px;
+    width: 320px;
+    padding: 12px 20px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 130%;
+    color: #FFFFFF;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+main > .wrapper > .right_block > .registr > form > button > img {
+    margin-left: 10px;
+}
+main > .wrapper > .right_block > .secure {
+    display: none;
+}
+@media screen and (max-width: 360px) {
+    .wrapper {
+        width: 100%;
+        flex-direction: column;
+        max-width: 360px;
+    }
+    .input_reg {
+        padding: 16px 96px 16px 10px;
+        max-width: 280px;
+    }
+    main > .wrapper {
+        justify-content: center;
+        padding: 60px 0;
+    }
+    main > .wrapper > .left_block {
+        background-color: #fff;
+        box-shadow: none;
+        border-radius: 0;
+        width: 100%;
+        background-image: none;
+        display: flex;
+        justify-content: center;
+        padding-top: 40px;
+    }
+    main > .wrapper > .left_block > .small_pic {
+        display: block;
+    }
+    main > .wrapper > .right_block {
+        width: 100%;
+        box-shadow: none;
+    }
+    main > .wrapper > .right_block > div:first-of-type {
+        padding: 20px 0 28px 0;
+        border-top-right-radius: 0;
+        background-color: #fff;
+    }
+    main > .wrapper > .right_block > div:first-of-type > h2 {
+        width: 280px;
+    }
+    main > .wrapper > .right_block > .registr {
+        padding: 0 0 28px 0;
+    }
+    main > .wrapper > .right_block > .registr > form > .form_view:last-of-type {
+        margin: 20px 0 28px 0;
+        grid-template-columns: 140px 140px;
+    }
+    main > .wrapper > .right_block > .registr > form > .form_view:last-of-type > input {
+        width: 174px;
+    }
+    main > .wrapper > .right_block > .registr > form > button {
+        width: 280px;
+    }
+    main > .wrapper > .right_block > .secure {
+        width: 100%;
+        background: #F8F8F8;
+        display: block;
+    }
+    main > .wrapper > .right_block > .secure {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 11px 0;
+    }
+    main > .wrapper > .right_block > .secure > p {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 130%;
+        text-align: center;
+        color: #212121;
+    }
+    main > .wrapper > .right_block > .secure > img {
+        margin: 0 20px 0 20px;
+    }
+}
